@@ -4,4 +4,3 @@
 *.dockerignore text eol=lf
 Dockerfile text eol=lf
 .gitattributes text eol=lf
-*wisecow-k8s/service.yaml
