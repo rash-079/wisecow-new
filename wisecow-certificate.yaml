@@ -1,0 +1,12 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: wisecow-tls
+  namespace: default
+spec:
+  secretName: wisecow-tls-selfsigned  # This is the name of the TLS secret that will be created
+  issuerRef:
+    name: selfsigned-cluster-issuer  # Reference to the ClusterIssuer
+    kind: ClusterIssuer
+  dnsNames:
+    - wisecow.35.231.11.241.nip.io      # Replace with your domain

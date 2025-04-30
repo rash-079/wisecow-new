@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: wisecow-deployment
+  name: wisecow-deploy
 spec:
   replicas: 1
   selector:
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: wisecow-app
-          image: rashmi1408/wisecow:latest # Use the image you built earlier
+          image: rashmi1408/wisecow:$GITHUB_SHA # Use the image you built earlier
           ports:
             - containerPort: 4499  # The port your app listens on inside the container
           imagePullPolicy: Always
