@@ -8,5 +8,5 @@ spec:
   type: LoadBalancer
   ports:
     - protocol: TCP
-      port: 80       # The port that will be exposed externally
-      targetPort: 4499  # The port inside the container that Wisecow listens on
+      port: 80       
+      targetPort: 4499  

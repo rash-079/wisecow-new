@@ -4,9 +4,9 @@ metadata:
   name: wisecow-tls
   namespace: default
 spec:
-  secretName: wisecow-tls-selfsigned  # This is the name of the TLS secret that will be created
+  secretName: wisecow-tls-selfsigned  
   issuerRef:
-    name: selfsigned-cluster-issuer  # Reference to the ClusterIssuer
+    name: selfsigned-cluster-issuer 
     kind: ClusterIssuer
   dnsNames:
-    - wisecow.35.231.11.241.nip.io      # Replace with your domain
+    - wisecow.35.231.11.241.nip.io      
